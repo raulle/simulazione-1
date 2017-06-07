@@ -44,8 +44,8 @@ public class SerieAController {
     void handleCarica(ActionEvent event) {
     	
     	Season s = boxSeason.getValue();
-    	List<Team> tu= model.getClassifica(s);
-    	for (Team t : tu)
+    	List<Team> team= model.getClassifica(s);
+    	for (Team t : team)
     		txtResult.appendText(t.toString()+"\n");
     	
 
